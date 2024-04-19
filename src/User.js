@@ -3,7 +3,7 @@ const User = ({name,avatar,link}) => {
         <div className="user-container">
             <h1>{name}</h1>
             <a href={link}>
-                <img src={avatar} alt="Profile Picture"/>
+                <img src={avatar} alt={`Profile pricture of ${name}`}/>
             </a>
         </div>
     );
