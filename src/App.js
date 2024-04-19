@@ -18,8 +18,10 @@ function App() {
     <div className="App">
       <div className="search-container">
         <h1>Github User Search</h1>
-        <input type="text" onChange={(e)=>setUser(e.target.value)}/>
-        <button onClick={()=>fetchData()}>Search</button>
+        <div className="search">
+          <input type="text" onChange={(e)=>setUser(e.target.value)}/>
+          <button onClick={()=>fetchData()}>🔎︎</button>
+        </div>
       </div>
       <div className="users-container">
         { data && 
